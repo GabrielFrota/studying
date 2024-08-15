@@ -3,7 +3,7 @@ package org.example;
 import java.sql.*;
 import java.time.LocalDate;
 
-public class NewClientsSum {
+public class NewClientsCount {
     public static void main(String[] args) throws SQLException {
         var conn = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
         var stmt = conn.prepareStatement("DROP TABLE IF EXISTS emp_client_stat;" +
