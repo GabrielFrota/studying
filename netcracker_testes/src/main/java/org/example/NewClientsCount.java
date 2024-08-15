@@ -65,6 +65,5 @@ public class NewClientsCount {
             System.out.println("{employee_name: "+ rs.getString(1) +
                     ", new_clients_count: "+ rs.getInt(2) + "}");
         }
-        conn.close();
     }
 }
