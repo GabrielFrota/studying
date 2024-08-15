@@ -36,23 +36,19 @@ public class NewClientsCount {
             stmt = conn.prepareStatement("INSERT INTO emp_client_stat VALUES (1, ?, 1)");
             stmt.setDate(1, Date.valueOf(LocalDate.parse("2021-03-" + String.format("%02d", i))));
             stmt.executeUpdate();
-        }
-        for (int i = 3; i < 26; i++) {
+
             stmt = conn.prepareStatement("INSERT INTO emp_client_stat VALUES (2, ?, 2)");
             stmt.setDate(1, Date.valueOf(LocalDate.parse("2021-03-" + String.format("%02d", i))));
             stmt.executeUpdate();
-        }
-        for (int i = 3; i < 26; i++) {
+
             stmt = conn.prepareStatement("INSERT INTO emp_client_stat VALUES (2, ?, 2)");
             stmt.setDate(1, Date.valueOf(LocalDate.parse("2021-02-" + String.format("%02d", i))));
             stmt.executeUpdate();
-        }
-        for (int i = 3; i < 26; i++) {
+
             stmt = conn.prepareStatement("INSERT INTO emp_client_stat VALUES (3, ?, 3)");
             stmt.setDate(1, Date.valueOf(LocalDate.parse("2021-03-" + String.format("%02d", i))));
             stmt.executeUpdate();
-        }
-        for (int i = 3; i < 26; i++) {
+
             stmt = conn.prepareStatement("INSERT INTO emp_client_stat VALUES (3, ?, 2)");
             stmt.setDate(1, Date.valueOf(LocalDate.parse("2021-02-" + String.format("%02d", i))));
             stmt.executeUpdate();
